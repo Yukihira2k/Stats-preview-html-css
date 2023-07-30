@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(233, 47%, 7%);
+    color: white;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+.flex-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 450px;
+    background-color: hsl(244, 38%, 16%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding:50px;
+  
+
+}
+.flex-left h1{
+   padding:0px 50px 25px 50px;
+   font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+.details{
+    font-size: 17px;
+    padding-bottom:80px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    padding:0px 25px 25px 50px;
+    line-height: 1.5em;
+  
+    color:hsla(0, 0%, 100%, 0.75);
+    
+
+}
+span{
+    color:hsl(277, 64%, 61%);
+}
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:600px;
+    color:hsla(0, 0%, 100%, 0.6);
+    
+}
+.box{
+    margin-top:15px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+.box h2{
+    margin-bottom:15px;
+    color: white;
+}
+.box p{
+    font-size: 14px;
+}
+
+.flex-right{
+   width: 500px;
+   height: 450px;
+   background-image:linear-gradient(rgba(85, 13, 107, 0.7),rgba(94, 12, 126, 0.7)),url(./images/image-header-desktop.jpg);
+   background-size: cover;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+}
+
+@media (max-width:680px){
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        margin:25px;
+        
+    }
+    .flex-right{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        height:550px ;
+        background-size: cover;
+     
+        background-image:linear-gradient(rgba(85, 13, 107, 0.7),rgba(94, 12, 126, 0.7)) url(./images/image-header-mobile.jpg);
+    }
+    .flex-left{
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        text-align: center;
+        width:500px;
+        justify-content: center;
+        align-items: center;
+        height: 650px;
+       
+       
+    }
+    .flex-left h1{
+        font-size: 35px;
+        padding-top:25px;
+       padding: 0;
+       padding-bottom: 25px;;
+        width:auto;
+       
+    }
+    .details{
+        padding:0;
+        margin: 0;;
+        font-size: 23px;
+        text-align: center;
+        width:300px;
+        margin-bottom:20px;
+    }
+    .flex{
+        flex-direction: column;
+        
+        
+    }
+    .box{
+        margin: 10px;
+        
+    }
+}
